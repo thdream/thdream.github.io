@@ -6,15 +6,36 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://thdream.github.io/blog">
-  <title>Archives | Hexo</title>
+  <title>集合 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://thdream.github.io/blog/archives/index.html">
+  <meta name="description" content="集合1.集合体系CollectionMap  2.具体集合HashMap​         java7初始容量为什么一定要是2的幂？ ​    x 1减1操作才能拿到全部是1的值，对它进行按位与才能非常快速的拿到数组的下标，并且分布还是均匀的。  ​        不是的话，会调整为2的幂。    123只取模缺点：①负数变为正数②较慢     1使元素尽可能的均匀存储，防止经常碰撞。   res">
+<meta property="og:type" content="article">
+<meta property="og:title" content="集合">
+<meta property="og:url" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="集合1.集合体系CollectionMap  2.具体集合HashMap​         java7初始容量为什么一定要是2的幂？ ​    x 1减1操作才能拿到全部是1的值，对它进行按位与才能非常快速的拿到数组的下标，并且分布还是均匀的。  ​        不是的话，会调整为2的幂。    123只取模缺点：①负数变为正数②较慢     1使元素尽可能的均匀存储，防止经常碰撞。   res">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142433271.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630151220701.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630150017247.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png">
+<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630161503975.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194238755.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630193429057.png">
+<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194634555.png">
+<meta property="article:published_time" content="2020-06-30T06:21:31.991Z">
+<meta property="article:modified_time" content="2020-07-01T09:46:25.937Z">
 <meta property="article:author" content="Tan Hui">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,238 +171,318 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-集合" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      集合
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/%E9%9B%86%E5%90%88/" class="archive-article-date">
+
+        
+        <a href="/2020/06/30/%E9%9B%86%E5%90%88/" class="archive-article-date">
   	<time datetime="2020-06-30T06:21:31.991Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/%E9%9B%86%E5%90%88/">集合</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h2 id="1-集合体系"><a href="#1-集合体系" class="headerlink" title="1.集合体系"></a>1.集合体系</h2><h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142358974.png" alt="image-20200630142358974" style="zoom: 50%;" /></h3><h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142433271.png" alt="image-20200630142433271" style="zoom:50%;" />
 
-        <div class="article-info info-on-right">
-          
-          
+<h2 id="2-具体集合"><a href="#2-具体集合" class="headerlink" title="2.具体集合"></a>2.具体集合</h2><h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p>​        <img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png" alt="image-20200630144936143"></p>
+<h4 id="java7"><a href="#java7" class="headerlink" title="java7"></a>java7</h4><p>初始容量为什么一定要是2的幂？</p>
+<p>​    <img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630151220701.png" alt="image-20200630151220701"  />x</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">减1操作才能拿到全部是1的值，对它进行按位与才能非常快速的拿到数组的下标，并且分布还是均匀的。</span><br></pre></td></tr></table></figure>
 
+<p>​        不是的话，会调整为2的幂。</p>
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png" alt="image-20200630145804439"></p>
+<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630150017247.png" alt="image-20200630150017247" style="zoom:50%;" />
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">只取模缺点：</span><br><span class="line">①负数变为正数</span><br><span class="line">②较慢</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png" alt="image-20200630151350122"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使元素尽可能的均匀存储，防止经常碰撞。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>resize</p>
+<ul>
+<li><p>rehash</p>
+</li>
+<li><p>transfer</p>
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png" alt="image-20200630152518078"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>java7 hashMap问题</p>
+<ul>
+<li><p>死锁</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">多线程</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png" alt="image-20200630152851399"></p>
+</li>
+<li><p>潜在安全隐患</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">哈希碰撞导致哈希表退化为链表</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png" alt="image-20200630154111847"></p>
+<h3 id="java8改进"><a href="#java8改进" class="headerlink" title="java8改进"></a>java8改进</h3><p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png" alt="image-20200630154338361"></p>
+<p>树化阈值为8原因</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">哈希桶符合泊松分布，超过8的概率很小</span><br></pre></td></tr></table></figure>
+
+<p>put函数</p>
+<ul>
+<li><p>hash()</p>
+<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png" alt="image-20200630155515170"></p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">避免只有低位相同高位不同的key 发生碰撞</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>putVal()</li>
+</ul>
+<p>  ​        红黑树</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">链表：O（n）</span><br><span class="line">二叉树：O（logn）--&gt;退化为链表</span><br><span class="line">数组：resize()</span><br></pre></td></tr></table></figure>
+
+
+
+<p>​    扩容：</p>
+<p>​    ①new Index = old Index 或 1old Index </p>
+<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630161503975.png" alt="image-20200630161503975" style="zoom:50%;" />
+
+<p>resize效率很低 </p>
+<p><a href="https://zhuanlan.zhihu.com/p/76735726" target="_blank" rel="noopener">参考：</a></p>
+<h3 id="1-HashMap的实现原理"><a href="#1-HashMap的实现原理" class="headerlink" title="(1)HashMap的实现原理?"></a>(1)HashMap的实现原理?</h3><ul>
+<li><p>你看过HashMap源码嘛，知道原理嘛?</p>
+</li>
+<li><p>为什么用数组+链表？</p>
+</li>
+<li><p>hash冲突你还知道哪些解决办法？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1)开放定址法(2)链地址法(3)再哈希法(4)公共溢出区域法</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>我用LinkedList代替数组结构可以么?</p>
+</li>
+<li><p>既然是可以的,为什么HashMap不用LinkedList,而选用数组?</p>
+</li>
+</ul>
+<h3 id="2-HashMap在什么条件下扩容"><a href="#2-HashMap在什么条件下扩容" class="headerlink" title="(2)HashMap在什么条件下扩容?"></a>(2)HashMap在什么条件下扩容?</h3><ul>
+<li><p>HashMap在什么条件下扩容?</p>
+</li>
+<li><p>为什么扩容是2的n次幂?</p>
+<p>​    减1操作才能拿到全部是1的值，对它进行按位与才能非常<strong>快速</strong>的拿到数组的下标，并且分布还是均匀的。</p>
+</li>
+<li><p>为什么要先高16位异或低16位再取模运算?</p>
+<p>​    降低hash碰撞的几率，避免只有低位相同高位不同的key 发生碰撞</p>
+</li>
+</ul>
+<h3 id="3-讲讲hashmap的get-put的过程"><a href="#3-讲讲hashmap的get-put的过程" class="headerlink" title="(3)讲讲hashmap的get/put的过程?"></a>(3)讲讲hashmap的get/put的过程?</h3><ul>
+<li><p>知道hashmap中put元素的过程是什么样么?</p>
+<p>①hashcode 数组下标</p>
+<p>②无碰撞，直接放入。</p>
+<p>③碰撞，如果有相同的key，值直接覆盖。没有，则插入链表尾部。</p>
+<p>④链表长度大于等于TREEIFY_THRESHOLD（8） 转红黑树</p>
+<p>⑤如果table超过阈值进行resize</p>
+</li>
+</ul>
+<ul>
+<li><p>知道hashmap中get元素的过程是什么样么？</p>
+<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194238755.png" alt="image-20200630194238755" style="zoom:50%;" />
+
+<p>​    ①通过key计算元素的位置</p>
+<p>​    ②第一个结点命中，直接返回；没有命中：去链表或者树中查询。</p>
+</li>
+<li><p>你还知道哪些hash算法？</p>
+<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630193429057.png" alt="image-20200630193429057" style="zoom: 67%;" />
+</li>
+<li><p>说说String中hashcode的实现?</p>
+<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194634555.png" alt="image-20200630194634555" style="zoom:50%;" />
+
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">以31为权，对每一位为字符的ASCII值进行运算，用自然溢出来等效取模。</span><br><span class="line">哈希计算公式可以计为s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]</span><br><span class="line"></span><br><span class="line">那为什么以31为质数呢?</span><br><span class="line">主要是因为31是一个奇质数，所以31*i&#x3D;32*i-i&#x3D;(i&lt;&lt;5)-i，这种位移与减法结合的计算相比一般的运算快很多。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-为什么hashmap的在链表元素数量超过8时改为红黑树"><a href="#4-为什么hashmap的在链表元素数量超过8时改为红黑树" class="headerlink" title="(4)为什么hashmap的在链表元素数量超过8时改为红黑树?"></a>(4)为什么hashmap的在链表元素数量超过8时改为红黑树?</h3><ul>
+<li><p>知道jdk1.8中hashmap改了啥么?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">结构&#x2F;hash算法&#x2F;扩容</span><br><span class="line">由数组+链表的结构改为数组+链表+红黑树。</span><br><span class="line">优化了高位运算的hash算法：h^(h&gt;&gt;&gt;16)</span><br><span class="line">扩容后，元素要么是在原位置，要么是在原位置再移动2次幂的位置，且链表顺序不变。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>为什么在解决hash冲突的时候，不直接用红黑树?而选择先用链表，再转红黑树?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">因为红黑树需要进行左旋，右旋，变色这些操作来保持平衡，而单链表不需要。 </span><br><span class="line">当元素小于8个当时候，此时做查询操作，链表结构已经能保证查询性能。</span><br><span class="line">当元素大于8个的时候，此时需要红黑树来加快查询速度，但是新增节点的效率变慢了。</span><br><span class="line"></span><br><span class="line">因此，如果一开始就用红黑树结构，元素太少，新增效率又比较慢，无疑这是浪费性能的。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>我不用红黑树，用二叉查找树可以么?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以。但是二叉查找树在特殊情况下会变成一条线性结构（这就跟原来使用链表结构一样了，造成很深的问题），遍历查找会非常慢</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>那为什么阀值是8呢?</p>
+</li>
+<li><p>当链表转为红黑树后，什么时候退化为链表?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为6的时候退化为链表。中间有个差值7可以防止链表和树之间频繁的转换。</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="5-HashMap的并发问题"><a href="#5-HashMap的并发问题" class="headerlink" title="(5)HashMap的并发问题?"></a>(5)HashMap的并发问题?</h3><p>此题可以组成如下连环炮来问</p>
+<ul>
+<li>HashMap在并发编程环境下有什么问题啊?</li>
+<li>在jdk1.8中还有这些问题么?</li>
+<li>你一般怎么解决这些问题的？</li>
+</ul>
+<h3 id="6-你一般用什么作为HashMap的key"><a href="#6-你一般用什么作为HashMap的key" class="headerlink" title="(6)你一般用什么作为HashMap的key?"></a>(6)你一般用什么作为HashMap的key?</h3><p>此题可以组成如下连环炮来问</p>
+<ul>
+<li>健可以为Null值么?</li>
+<li>你一般用什么作为HashMap的key?</li>
+<li>我用可变类当HashMap的key有什么问题?</li>
+<li>如果让你实现一个自定义的class作为HashMap的key该如何实现？</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/Mybatis/" class="archive-article-date">
-  	<time datetime="2020-06-30T05:16:07.153Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/30/Mybatis/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mybatis</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/Mybatis/">Mybatis</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="archive-article-date">
-  	<time datetime="2020-06-30T04:53:00.531Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/%E7%9F%A5%E8%AF%86%E7%82%B9/">知识点</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/%E9%A2%98%E7%9B%AE/" class="archive-article-date">
-  	<time datetime="2020-06-30T01:36:12.885Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/%E9%A2%98%E7%9B%AE/">题目</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/29/%E5%8F%8D%E5%B0%84/" class="archive-article-date">
-  	<time datetime="2020-06-29T11:16:42.932Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/29/%E5%8F%8D%E5%B0%84/">反射</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/29/JVM/" class="archive-article-date">
-  	<time datetime="2020-06-29T07:44:02.749Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/29/JVM/">JVM</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/29/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" class="archive-article-date">
-  	<time datetime="2020-06-29T06:32:12.969Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/29/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">类加载机制</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/27/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E6%96%87/" class="archive-article-date">
-  	<time datetime="2020-06-26T16:05:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/27/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E6%96%87/">第一篇hexo博文</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -404,8 +505,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
