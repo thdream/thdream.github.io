@@ -15,27 +15,27 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="集合1.集合体系CollectionMap  2.具体集合HashMap​         java7初始容量为什么一定要是2的幂？ ​    x 1减1操作才能拿到全部是1的值，对它进行按位与才能非常快速的拿到数组的下标，并且分布还是均匀的。  ​        不是的话，会调整为2的幂。    123只取模缺点：①负数变为正数②较慢     1使元素尽可能的均匀存储，防止经常碰撞。   res">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142433271.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630151220701.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630150017247.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png">
-<meta property="og:image" content="c:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630161503975.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194238755.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630193429057.png">
-<meta property="og:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194634555.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142433271.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630151220701.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630150017247.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630161503975.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194238755.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630193429057.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630194634555.png">
 <meta property="article:published_time" content="2020-06-30T06:21:31.991Z">
 <meta property="article:modified_time" content="2020-07-01T09:46:25.937Z">
 <meta property="article:author" content="Tan Hui">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
+<meta name="twitter:image" content="https://thdream.github.io/blog/2020/06/30/%E9%9B%86%E5%90%88/Users/86159/AppData/Roaming/Typora/typora-user-images/image-20200630142358974.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -191,22 +191,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h2 id="1-集合体系"><a href="#1-集合体系" class="headerlink" title="1.集合体系"></a>1.集合体系</h2><h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142358974.png" alt="image-20200630142358974" style="zoom: 50%;" /></h3><h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142433271.png" alt="image-20200630142433271" style="zoom:50%;" />
+        <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h2 id="1-集合体系"><a href="#1-集合体系" class="headerlink" title="1.集合体系"></a>1.集合体系</h2><h3 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h3><h3 id><a href="#" class="headerlink" title></a><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142358974.png" alt="image-20200630142358974" style="zoom: 50%;"></h3><h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630142433271.png" alt="image-20200630142433271" style="zoom:50%;">
 
-<h2 id="2-具体集合"><a href="#2-具体集合" class="headerlink" title="2.具体集合"></a>2.具体集合</h2><h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p>​        <img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png" alt="image-20200630144936143"></p>
+<h2 id="2-具体集合"><a href="#2-具体集合" class="headerlink" title="2.具体集合"></a>2.具体集合</h2><h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p>​        <img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630144936143.png" alt="image-20200630144936143"></p>
 <h4 id="java7"><a href="#java7" class="headerlink" title="java7"></a>java7</h4><p>初始容量为什么一定要是2的幂？</p>
-<p>​    <img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630151220701.png" alt="image-20200630151220701"  />x</p>
+<p>​    <img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630151220701.png" alt="image-20200630151220701">x</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">减1操作才能拿到全部是1的值，对它进行按位与才能非常快速的拿到数组的下标，并且分布还是均匀的。</span><br></pre></td></tr></table></figure>
 
 <p>​        不是的话，会调整为2的幂。</p>
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png" alt="image-20200630145804439"></p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630150017247.png" alt="image-20200630150017247" style="zoom:50%;" />
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630145804439.png" alt="image-20200630145804439"></p>
+<img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630150017247.png" alt="image-20200630150017247" style="zoom:50%;">
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">只取模缺点：</span><br><span class="line">①负数变为正数</span><br><span class="line">②较慢</span><br></pre></td></tr></table></figure>
 
 
 
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png" alt="image-20200630151350122"></p>
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630151350122.png" alt="image-20200630151350122"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使元素尽可能的均匀存储，防止经常碰撞。</span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -215,7 +215,7 @@
 <li><p>rehash</p>
 </li>
 <li><p>transfer</p>
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png" alt="image-20200630152518078"></p>
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152518078.png" alt="image-20200630152518078"></p>
 </li>
 </ul>
 </li>
@@ -225,7 +225,7 @@
 <li><p>死锁</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">多线程</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png" alt="image-20200630152851399"></p>
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630152851399.png" alt="image-20200630152851399"></p>
 </li>
 <li><p>潜在安全隐患</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">哈希碰撞导致哈希表退化为链表</span><br></pre></td></tr></table></figure>
@@ -234,15 +234,15 @@
 
 </li>
 </ul>
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png" alt="image-20200630154111847"></p>
-<h3 id="java8改进"><a href="#java8改进" class="headerlink" title="java8改进"></a>java8改进</h3><p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png" alt="image-20200630154338361"></p>
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154111847.png" alt="image-20200630154111847"></p>
+<h3 id="java8改进"><a href="#java8改进" class="headerlink" title="java8改进"></a>java8改进</h3><p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630154338361.png" alt="image-20200630154338361"></p>
 <p>树化阈值为8原因</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">哈希桶符合泊松分布，超过8的概率很小</span><br></pre></td></tr></table></figure>
 
 <p>put函数</p>
 <ul>
 <li><p>hash()</p>
-<p><img src="C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png" alt="image-20200630155515170"></p>
+<p><img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/C:%5CUsers%5C86159%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200630155515170.png" alt="image-20200630155515170"></p>
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">避免只有低位相同高位不同的key 发生碰撞</span><br></pre></td></tr></table></figure>
@@ -257,7 +257,7 @@
 
 <p>​    扩容：</p>
 <p>​    ①new Index = old Index 或 1old Index </p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630161503975.png" alt="image-20200630161503975" style="zoom:50%;" />
+<img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630161503975.png" alt="image-20200630161503975" style="zoom:50%;">
 
 <p>resize效率很低 </p>
 <p><a href="https://zhuanlan.zhihu.com/p/76735726" target="_blank" rel="noopener">参考：</a></p>
@@ -295,16 +295,16 @@
 </ul>
 <ul>
 <li><p>知道hashmap中get元素的过程是什么样么？</p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194238755.png" alt="image-20200630194238755" style="zoom:50%;" />
+<img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194238755.png" alt="image-20200630194238755" style="zoom:50%;">
 
 <p>​    ①通过key计算元素的位置</p>
 <p>​    ②第一个结点命中，直接返回；没有命中：去链表或者树中查询。</p>
 </li>
 <li><p>你还知道哪些hash算法？</p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630193429057.png" alt="image-20200630193429057" style="zoom: 67%;" />
+<img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630193429057.png" alt="image-20200630193429057" style="zoom: 67%;">
 </li>
 <li><p>说说String中hashcode的实现?</p>
-<img src="C:\Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194634555.png" alt="image-20200630194634555" style="zoom:50%;" />
+<img src="/blog/2020/06/30/%E9%9B%86%E5%90%88/Users\86159\AppData\Roaming\Typora\typora-user-images\image-20200630194634555.png" alt="image-20200630194634555" style="zoom:50%;">
 
 </li>
 </ul>
