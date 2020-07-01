@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://thdream.github.io/blog">
-  <title>类加载机制 | Hexo</title>
+  <title>&#39;类加载机制&#39; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述：    Bootstrap ClassLoader">
 <meta property="og:type" content="article">
-<meta property="og:title" content="类加载机制">
-<meta property="og:url" content="https://thdream.github.io/blog/2020/06/29/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/index.html">
+<meta property="og:title" content="&#39;类加载机制&#39;">
+<meta property="og:url" content="https://thdream.github.io/blog/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述：    Bootstrap ClassLoader">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdn.net/20160724013342703">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/16830435-9c499df7d32a2fce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/739/format/webp">
 <meta property="og:image" content="https://img-blog.csdn.net/20160724013443594">
-<meta property="article:published_time" content="2020-06-29T06:32:12.969Z">
-<meta property="article:modified_time" content="2020-06-30T03:04:10.260Z">
+<meta property="article:published_time" content="2020-07-01T15:45:49.000Z">
+<meta property="article:modified_time" content="2020-07-01T15:46:35.528Z">
 <meta property="article:author" content="Tan Hui">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20160724013342703">
@@ -165,13 +165,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      类加载机制
+      &#39;类加载机制&#39;
     </h1>
   
 
         
-        <a href="/2020/06/29/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" class="archive-article-date">
-  	<time datetime="2020-06-29T06:32:12.969Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-29</time>
+        <a href="/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" class="archive-article-date">
+  	<time datetime="2020-07-01T15:45:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-01</time>
 </a>
         
       </header>
@@ -232,6 +232,7 @@
     读取或设置一个类的静态字段（static）时（被 static 修饰又被 final 修饰的，已在编译期把结果放入常量池的静态字段除外）
     调用一个类的静态方法时。
     使用 Java.lang.refect 包的方法对类进行反射调用时，如果类还没有进行过初始化，则需要先触发其初始化。
+
      当初始化一个类的时候，如果发现其父类还没有进行初始化，则需要先触发其父类的初始化。
      当虚拟机启动时，用户需要指定一个要执行的主类，虚拟机会先执行该主类。        </code></pre><p>​            虚拟机规定只有这四种情况才会触发类的初始化，称为对一个类进行主动引用，除此之外所有引用类的方式都不会触发其初始化，称为被动引用。</p>
 <h1 id="静态加载和动态加载"><a href="#静态加载和动态加载" class="headerlink" title="静态加载和动态加载"></a>静态加载和动态加载</h1><blockquote>
@@ -346,7 +347,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://thdream.github.io/blog/2020/06/29/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://thdream.github.io/blog/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -359,15 +360,6 @@
 
   
 <nav id="article-nav">
-  
-    <a href="/2020/06/29/JVM/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JVM
-        
-      </div>
-    </a>
   
   
     <a href="/2020/06/27/%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E5%8D%9A%E6%96%87/" id="article-nav-older" class="article-nav-link-wrap">
