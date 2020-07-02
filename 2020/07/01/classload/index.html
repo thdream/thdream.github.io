@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="https://thdream.github.io/blog">
   <title>&#39;类加载机制&#39; | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述：    Bootstrap ClassLoader">
+  <meta name="description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述： ​      Bootstrap ClassLo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#39;类加载机制&#39;">
-<meta property="og:url" content="https://thdream.github.io/blog/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/index.html">
+<meta property="og:url" content="https://thdream.github.io/blog/2020/07/01/classload/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述：    Bootstrap ClassLoader">
+<meta property="og:description" content="类加载机制​      java程序经过编译后形成.class文件。通过类加载器将字节码(.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。  基本概念​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述： ​      Bootstrap ClassLo">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdn.net/20160724013342703">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/16830435-9c499df7d32a2fce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/739/format/webp">
-<meta property="og:image" content="https://img-blog.csdn.net/20160724013443594">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/07/01/classload/1_1.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/07/01/classload/1_2.png">
+<meta property="og:image" content="https://thdream.github.io/blog/2020/07/01/classload/1_3.png">
 <meta property="article:published_time" content="2020-07-01T15:45:49.000Z">
-<meta property="article:modified_time" content="2020-07-01T15:46:35.528Z">
+<meta property="article:modified_time" content="2020-07-02T02:16:25.698Z">
 <meta property="article:author" content="Tan Hui">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdn.net/20160724013342703">
+<meta name="twitter:image" content="https://thdream.github.io/blog/2020/07/01/classload/1_1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,7 +158,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-类加载机制" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-classload" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -170,7 +170,7 @@
   
 
         
-        <a href="/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" class="archive-article-date">
+        <a href="/2020/07/01/classload/" class="archive-article-date">
   	<time datetime="2020-07-01T15:45:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-01</time>
 </a>
         
@@ -183,8 +183,7 @@
 <p>java程序经过编译后形成<em>.class文件。通过类加载器将字节码(</em>.class)加载入JVM的内存中。JVM将类加载过程分成加载，连接，初始化三个阶段，其中连接阶段又可分为验证，准备，解析三个阶段。</p>
 </blockquote>
 <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>​    JVM 的类加载是通过 ClassLoader 及其子类来完成的，类的层次关系和加载顺序可以由下图来描述：</p>
-<img src="https://img-blog.csdn.net/20160724013342703" alt="img" style="zoom: 67%;">
-
+<p>​    <img src="/blog/2020/07/01/classload/1_1.png" alt="层次关系"></p>
 <ul>
 <li><p>Bootstrap ClassLoader启动类加载器</p>
 <p>负责加载$JAVA_HOME中<strong>jre/lib/</strong>里所有的 class(JDK 代表 JDK 的安装目录，下同)，<u>或被-Xbootclasspath参数指定的路径中的，并且能被虚拟机识别的类库（如 rt.jar，<strong>所有的java.*开头的类均被 Bootstrap ClassLoader 加载</strong></u>）。启动类加载器由 C++ 实现，不是 ClassLoader 子类。无法被 Java 程序直接引用的。</p>
@@ -198,8 +197,7 @@
 <p>启动类加载器：它使用 C++ 实现（这里仅限于 Hotspot，也就是 JDK1.5 之后默认的虚拟机，有很多其他的虚拟机是用 Java 语言实现的），是虚拟机自身的一部分。<br>所有其他的类加载器：这些类加载器都由 Java 语言实现，独立于虚拟机之外，并且全部继承自抽象类 java.lang.ClassLoader，这些类加载器需要由启动类加载器加载到内存中之后才能去加载其他的类。<br>应用程序都是由这三种类加载器互相配合进行加载的，我们还可以加入自定义的类加载器。</p>
 </li>
 </ul>
-<h2 id="类加载过程"><a href="#类加载过程" class="headerlink" title="类加载过程"></a>类加载过程</h2><p>​        <img src="https://upload-images.jianshu.io/upload_images/16830435-9c499df7d32a2fce.png?imageMogr2/auto-orient/strip|imageView2/2/w/739/format/webp" alt="img" style="zoom: 50%;"></p>
-<p>​                    JVM整体结构</p>
+<h2 id="类加载过程"><a href="#类加载过程" class="headerlink" title="类加载过程"></a>类加载过程</h2><p>​                    <img src="/blog/2020/07/01/classload/1_2.png" alt="JVM整体结构"></p>
 <h3 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h3><p>​        是类加载过程的第一个阶段，在加载阶段，虚拟机需要完成以下三件事情：</p>
 <p>​            ①通过一个类的全限定名来获取其定义的二进制字节流。 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">二进制字节流并不只是单纯地从 Class 文件中获取，比如它还可以从 Jar 包中获取、从网络中获取（最典型的应用便是 Applet）、由其他文件生成（JSP 应用）等。</span><br></pre></td></tr></table></figure>
@@ -209,7 +207,7 @@
 <p>​            <strong>注意：</strong></p>
 <p>​               <strong>JVM主要在程序第一次主动使用类的时候，才会去加载该类。</strong>也就是说，JVM并不是在一开始就把一个程序就所有的类都加载到内存中，而是到用的时候才把它加载进来，而且只加载一次。</p>
 <h4 id="加载过程"><a href="#加载过程" class="headerlink" title="加载过程"></a>加载过程</h4><p>​            加载过程中会先检查类是否被已加载，<strong>检查顺序</strong>是自底向上，从 Custom ClassLoader 到 BootStrap ClassLoader 逐层检查，只要某个 Classloader 已加载就视为已加载此类，保证此类只所有 ClassLoader加载一次。而<strong>加载的顺序</strong>是自顶向下，也就是由上层来逐层尝试加载此类。这几种类加载器的层次关系如下图所示：</p>
-<p>​            <img src="https://img-blog.csdn.net/20160724013443594" alt="img" style="zoom:67%;"></p>
+<p>​            <img src="/blog/2020/07/01/classload/1_3.png" alt="双亲委派模型"></p>
 <p>​            这种层次关系称为类加载器的双亲委派模型。</p>
 <h4 id="双亲委派模型"><a href="#双亲委派模型" class="headerlink" title="双亲委派模型"></a>双亲委派模型</h4><p>​                工作流程：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把请求委托给父加载器去完成，依次向上，因此，所有的类加载请求最终都应该被传递到顶层的启动类加载器中，只有当父加载器在它的搜索范围中没有找到所需的类时，即无法完成该加载，子加载器才会尝试自己去加载该类。</span><br></pre></td></tr></table></figure>
@@ -347,7 +345,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://thdream.github.io/blog/2020/07/01/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://thdream.github.io/blog/2020/07/01/classload/" alt="微信分享二维码">
     </div>
 </div>
 
